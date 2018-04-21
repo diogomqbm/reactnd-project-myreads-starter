@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import BookShelfChanger from './BookShelfChanger'
 import '../App.css'
+import noCoverImage from '../icons/no-cover-image.png'
 
 export default class Book extends Component {
     render(){
 
-        const coverImg = this.props.book.imageLinks.thumbnail 
+        const coverImg = this.props.book.imageLinks ? this.props.book.thumbnail : noCoverImage
         const title = this.props.book.title ? this.props.book.title : "No title available"
 
         return (

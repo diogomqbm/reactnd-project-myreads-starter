@@ -90,3 +90,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+#Starting the Project
+
+First you download/clone the project into your environment than go to the directory you stored the project files. I used "yarn install" to install all the dependecies than "yarn start" to run the project on localhost:3000. You can also use "npm install" as a substitute to "yarn install" and "npm run start" as substitute to "yarn start".
