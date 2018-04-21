@@ -9,7 +9,7 @@ export default class SearchBooks extends Component {
     state = {
         query:'',
         newBooks: [],
-        searchErr: false,
+        searchError: false,
     }
 
     getBooks = event => {
@@ -21,16 +21,16 @@ export default class SearchBooks extends Component {
             .then(books => {
                 books.length > 0 ? this.setState({ 
                     newBooks: books,
-                    searchErr: false,
+                    searchError: false,
                 })
                 : this.setState({
                     newBooks: [],
-                    searchErr: true,
+                    searchError: true,
                 })
             })
         } else this.setState({
             newBooks: [],
-            searchErr: false,
+            searchError: false,
         })
     }
 
@@ -65,7 +65,7 @@ export default class SearchBooks extends Component {
                     </ol>
                 </div>
               )}
-              { this.state.searchErr && (
+              { this.state.searchError && (
                     <div>
                         <div className=''>
                             <h3>Search return 0 books. Please try again!</h3>
