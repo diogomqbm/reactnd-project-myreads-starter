@@ -6,12 +6,11 @@ export default class BookShelfChanger extends Component {
 
         let currentShelf = 'none'
 
-        for (let item of books) {
-            if (item.id === book.id) {
-                currentShelf = item.shelf
-                break
+        books.forEach(element => {
+            if(element.id === book.id) {
+                currentShelf = element.shelf
             }
-        }
+        });
 
 
         return (
